@@ -609,7 +609,57 @@
             line-height: 1.1;
         }
         .trainers-hero-text h3 em { color: var(--accent); font-style: italic; }
+/* Аккуратная подпись на фото тренеров */
+.trainers-hero {
+  position: relative;
+  overflow: hidden;
+}
 
+.trainers-hero-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  padding: 24px;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.65),
+    transparent 65%
+  );
+}
+
+.trainers-hero-text {
+  width: 100%;
+}
+
+.trainers-hero-text h3 {
+  font-size: 28px;
+  line-height: 1.15;
+  font-weight: 400;
+  max-width: 100%;
+  margin: 0;
+}
+
+.trainers-hero-text h3 em {
+  display: block;
+  margin-top: 8px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+@media (max-width: 600px) {
+  .trainers-hero-overlay {
+    padding: 20px;
+  }
+
+  .trainers-hero-text h3 {
+    font-size: 26px;
+  }
+
+  .trainers-hero-text h3 em {
+    font-size: 18px;
+  }
+}
         .trainers-cards {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -1208,7 +1258,7 @@
                 <div class="trainers-hero-overlay">
                     <div class="trainers-hero-text">
                         <div class="label">THE COMEBACK · 29 НОЯБРЯ</div>
-                        <h3>Наталья и Вероника <em>✳</em> Две подруги. Одна встреча.</h3>
+                        <h3>Наталья и Вероника <br>✳</em> Две подруги. Одна встреча.</h3>
                     </div>
                 </div>
             </div>
