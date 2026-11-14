@@ -927,6 +927,19 @@
             .stat { padding: 24px 16px; }
             .stat-num { font-size: 2.5rem; }
         }
+        /* THE COMEBACK — звёздочки на мобильных */
+@media (max-width: 600px) {
+  .stars .star {
+    color: #FF9FC8 !important;
+    font-size: 24px !important;
+    filter: drop-shadow(0 0 5px rgba(255,159,200,0.4));
+  }
+
+  .stars {
+    pointer-events: none;
+  }
+}
+
     </style>
 </head>
 <body>
