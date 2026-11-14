@@ -304,11 +304,33 @@
            }
         .marquee-track span { margin: 0 24px; }
         .marquee-track .star {
-    color: #E6A4BF;
+    display: inline-block;
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0 16px;
+    font-size: 0 !important;
     animation: none;
     filter: none;
+    background: none;
+    vertical-align: middle;
+}
+
+.marquee-track .star::before {
+    content: "✦";
+    display: inline-block;
     position: static;
-    text-decoration: none;
+    width: auto;
+    height: auto;
+    background: none;
+    clip-path: none;
+    color: #E6A4BF;
+    font-size: 13px;
+    line-height: 1;
+}
+
+.marquee-track .star::after {
+    content: none;
 }
         @keyframes marquee { to { transform: translateX(-50%); } }
 
