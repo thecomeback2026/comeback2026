@@ -934,7 +934,30 @@
     display: none !important;
   }
 }
+/* THE COMEBACK — скрываем крупные звёзды только на телефонах */
+@media (max-width: 600px) {
 
+  /* Звезда в главном заголовке */
+  .hero-title .star-mark {
+    display: none !important;
+  }
+
+  /* Звезда поверх фотографии тренеров */
+  .trainers-hero-text em {
+    display: none !important;
+  }
+
+  /* Звезда в футере */
+  footer .logo .star-mark {
+    display: none !important;
+  }
+
+  /* Большая декоративная звезда в деталях */
+  .details-section::before {
+    content: none !important;
+    display: none !important;
+  }
+}
 
     </style>
 </head>
