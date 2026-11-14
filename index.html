@@ -927,18 +927,46 @@
             .stat { padding: 24px 16px; }
             .stat-num { font-size: 2.5rem; }
         }
-        /* THE COMEBACK — звёздочки на мобильных */
+     /* THE COMEBACK — исправление мобильного декора */
 @media (max-width: 600px) {
-  .stars .star {
-    color: #FF9FC8 !important;
-    font-size: 24px !important;
-    filter: drop-shadow(0 0 5px rgba(255,159,200,0.4));
+
+  /* Уменьшаем фоновые цветные пятна */
+  .blob {
+    width: 180px !important;
+    height: 180px !important;
+    filter: blur(70px) !important;
+    opacity: 0.15 !important;
   }
 
+  .blob-1 {
+    top: -60px !important;
+    left: -80px !important;
+  }
+
+  .blob-2 {
+    top: 45% !important;
+    right: -90px !important;
+  }
+
+  .blob-3 {
+    bottom: -60px !important;
+    left: -80px !important;
+  }
+
+  /* Розовые декоративные звёздочки */
+  .stars .star {
+    font-size: 14px !important;
+    color: #D4A6A0 !important;
+    filter: none !important;
+  }
+
+  /* Декор не перекрывает содержимое */
   .stars {
-    pointer-events: none;
+    z-index: 0 !important;
+    pointer-events: none !important;
   }
 }
+
 
     </style>
 </head>
