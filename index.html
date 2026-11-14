@@ -608,7 +608,15 @@
   object-fit: contain;
   object-position: center;
 }
+/* Выравниваем размер лун */
+.trainer-card:first-child .trainer-photo img {
+  transform: scale(1.10);
+  transform-origin: center center;
+}
 
+.trainer-card:nth-child(2) .trainer-photo img {
+  transform: scale(1);
+}
 @media (max-width: 600px) {
   .trainers-cards {
     grid-template-columns: 1fr;
