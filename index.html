@@ -927,9 +927,10 @@
             .stat { padding: 24px 16px; }
             .stat-num { font-size: 2.5rem; }
         }
-     /* Временно скрываем звёзды на телефоне */
+     /* Убираем огромную звезду только на телефонах */
 @media (max-width: 600px) {
-  .stars {
+  .details-section::before {
+    content: none !important;
     display: none !important;
   }
 }
