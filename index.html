@@ -927,43 +927,10 @@
             .stat { padding: 24px 16px; }
             .stat-num { font-size: 2.5rem; }
         }
-     /* THE COMEBACK — исправление мобильного декора */
+     /* Временно скрываем звёзды на телефоне */
 @media (max-width: 600px) {
-
-  /* Уменьшаем фоновые цветные пятна */
-  .blob {
-    width: 180px !important;
-    height: 180px !important;
-    filter: blur(70px) !important;
-    opacity: 0.15 !important;
-  }
-
-  .blob-1 {
-    top: -60px !important;
-    left: -80px !important;
-  }
-
-  .blob-2 {
-    top: 45% !important;
-    right: -90px !important;
-  }
-
-  .blob-3 {
-    bottom: -60px !important;
-    left: -80px !important;
-  }
-
-  /* Розовые декоративные звёздочки */
-  .stars .star {
-    font-size: 14px !important;
-    color: #D4A6A0 !important;
-    filter: none !important;
-  }
-
-  /* Декор не перекрывает содержимое */
   .stars {
-    z-index: 0 !important;
-    pointer-events: none !important;
+    display: none !important;
   }
 }
 
